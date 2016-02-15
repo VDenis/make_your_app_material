@@ -26,8 +26,8 @@
 
     <style name="Theme.Bacon.Details" parent="Theme.Bacon"/>
 
-<!--    <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>-->
+    <!--    <style name="Theme.Bacon.Detail">
+            <item name="android:statusBarColor">@android:color/transparent</item>
+        </style>-->
 
 </resources>

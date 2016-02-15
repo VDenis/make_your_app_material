@@ -2,6 +2,6 @@
 <slide xmlns:android="http://schemas.android.com/apk/res/android"
        android:slideEdge="bottom">
     <targets>
-        <target android:targetId="@id/card_view" />
+        <target android:targetId="@id/card_view"/>
     </targets>
 </slide>
