@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.format.DateUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -33,6 +34,8 @@ import com.example.xyzreader.data.UpdaterService;
  */
 public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor>, AppBarLayout.OnOffsetChangedListener {
+
+    private String LOG_TAG = ArticleListActivity.class.getSimpleName();
 
     //private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
@@ -89,6 +92,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         public void onReceive(Context context, Intent intent) {
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
+                Log.d(LOG_TAG, "BroadcastReceiver, is refresh: " + mIsRefreshing);
                 updateRefreshingUI();
             }
         }
