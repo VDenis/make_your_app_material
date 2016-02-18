@@ -14,10 +14,10 @@ This project gives you an opportunity to improve an app’s design, a vital skil
 
 Through this project, you will:
 
-Understand the fundamentals of Android design.
-Apply Material Design guidelines to an mobile application.
-Separate an interface into surfaces.
-Effectively use transitions and motion.
+* Understand the fundamentals of Android design.
+* Apply Material Design guidelines to an mobile application.
+* Separate an interface into surfaces.
+* Effectively use transitions and motion.
 
 
 ## How Will I Complete this Project?
